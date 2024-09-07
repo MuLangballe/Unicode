@@ -12,4 +12,10 @@ public class UnicodeRESTcontroller {
         char c = (char)i;
         return "unicode=" + i + "char=" + c;
     }
+
+    @GetMapping("/character/{c}")
+    public String charToUnicode(@PathVariable char c){
+        int i = c;
+        return "unicode=" + i + "char=" + c;
+    }
 }
