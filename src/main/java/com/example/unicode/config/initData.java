@@ -26,7 +26,7 @@ public class initData implements CommandLineRunner {
             chars.add(c);
         }
 
-        for (char c: chars){
+       for (char c: chars){
             Unicode unicode = new Unicode();
             unicode.setBogstav(c);
             unicode.setUnicode(c);
